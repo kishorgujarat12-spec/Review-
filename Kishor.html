@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    body {
+      display: flex; justify-content: center; align-items: center;
+      height: 100vh; background: #1e3a8a; color: white;
+      font-family: sans-serif; text-align: center; margin: 0;
+    }
+  </style>
+</head>
+<body onload="go()">
+  <div>
+    <h1>⭐⭐⭐⭐⭐</h1>
+    <h2>Thank You For Your Review!</h2>
+    <p>Opening Google Page...</p>
+  </div>
+  <script>
+    function go() {
+      var voice = new SpeechSynthesisUtterance("Thank you for your review");
+      window.speechSynthesis.speak(voice);
+      setTimeout(function(){
+        window.location.href = "DUKAN_KA_REVIEW_LINK";
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
